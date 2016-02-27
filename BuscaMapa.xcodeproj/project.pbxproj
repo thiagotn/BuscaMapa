@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACCF668B1C820F790044AF5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF668A1C820F790044AF5F /* AppDelegate.swift */; };
+		ACCF668D1C820F790044AF5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF668C1C820F790044AF5F /* ViewController.swift */; };
+		ACCF66901C820F790044AF5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF668E1C820F790044AF5F /* Main.storyboard */; };
+		ACCF66921C820F790044AF5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCF66911C820F790044AF5F /* Assets.xcassets */; };
+		ACCF66951C820F790044AF5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF66931C820F790044AF5F /* LaunchScreen.storyboard */; };
+		ACCF66A01C820F790044AF5F /* BuscaMapaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF669F1C820F790044AF5F /* BuscaMapaTests.swift */; };
+		ACCF66AB1C820F790044AF5F /* BuscaMapaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66AA1C820F790044AF5F /* BuscaMapaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACCF669C1C820F790044AF5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACCF667F1C820F790044AF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCF66861C820F790044AF5F;
+			remoteInfo = BuscaMapa;
+		};
+		ACCF66A71C820F790044AF5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACCF667F1C820F790044AF5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACCF66861C820F790044AF5F;
+			remoteInfo = BuscaMapa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACCF66871C820F790044AF5F /* BuscaMapa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuscaMapa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF668A1C820F790044AF5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACCF668C1C820F790044AF5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACCF668F1C820F790044AF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACCF66911C820F790044AF5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACCF66941C820F790044AF5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACCF66961C820F790044AF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCF669B1C820F790044AF5F /* BuscaMapaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaMapaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF669F1C820F790044AF5F /* BuscaMapaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaMapaTests.swift; sourceTree = "<group>"; };
+		ACCF66A11C820F790044AF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCF66A61C820F790044AF5F /* BuscaMapaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaMapaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACCF66AA1C820F790044AF5F /* BuscaMapaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaMapaUITests.swift; sourceTree = "<group>"; };
+		ACCF66AC1C820F790044AF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACCF66841C820F790044AF5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF66981C820F790044AF5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF66A31C820F790044AF5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACCF667E1C820F790044AF5F = {
+			isa = PBXGroup;
+			children = (
+				ACCF66891C820F790044AF5F /* BuscaMapa */,
+				ACCF669E1C820F790044AF5F /* BuscaMapaTests */,
+				ACCF66A91C820F790044AF5F /* BuscaMapaUITests */,
+				ACCF66881C820F790044AF5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACCF66881C820F790044AF5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF66871C820F790044AF5F /* BuscaMapa.app */,
+				ACCF669B1C820F790044AF5F /* BuscaMapaTests.xctest */,
+				ACCF66A61C820F790044AF5F /* BuscaMapaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACCF66891C820F790044AF5F /* BuscaMapa */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF668A1C820F790044AF5F /* AppDelegate.swift */,
+				ACCF668C1C820F790044AF5F /* ViewController.swift */,
+				ACCF668E1C820F790044AF5F /* Main.storyboard */,
+				ACCF66911C820F790044AF5F /* Assets.xcassets */,
+				ACCF66931C820F790044AF5F /* LaunchScreen.storyboard */,
+				ACCF66961C820F790044AF5F /* Info.plist */,
+			);
+			path = BuscaMapa;
+			sourceTree = "<group>";
+		};
+		ACCF669E1C820F790044AF5F /* BuscaMapaTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF669F1C820F790044AF5F /* BuscaMapaTests.swift */,
+				ACCF66A11C820F790044AF5F /* Info.plist */,
+			);
+			path = BuscaMapaTests;
+			sourceTree = "<group>";
+		};
+		ACCF66A91C820F790044AF5F /* BuscaMapaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ACCF66AA1C820F790044AF5F /* BuscaMapaUITests.swift */,
+				ACCF66AC1C820F790044AF5F /* Info.plist */,
+			);
+			path = BuscaMapaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACCF66861C820F790044AF5F /* BuscaMapa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF66AF1C820F790044AF5F /* Build configuration list for PBXNativeTarget "BuscaMapa" */;
+			buildPhases = (
+				ACCF66831C820F790044AF5F /* Sources */,
+				ACCF66841C820F790044AF5F /* Frameworks */,
+				ACCF66851C820F790044AF5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuscaMapa;
+			productName = BuscaMapa;
+			productReference = ACCF66871C820F790044AF5F /* BuscaMapa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACCF669A1C820F790044AF5F /* BuscaMapaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF66B21C820F790044AF5F /* Build configuration list for PBXNativeTarget "BuscaMapaTests" */;
+			buildPhases = (
+				ACCF66971C820F790044AF5F /* Sources */,
+				ACCF66981C820F790044AF5F /* Frameworks */,
+				ACCF66991C820F790044AF5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCF669D1C820F790044AF5F /* PBXTargetDependency */,
+			);
+			name = BuscaMapaTests;
+			productName = BuscaMapaTests;
+			productReference = ACCF669B1C820F790044AF5F /* BuscaMapaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACCF66A51C820F790044AF5F /* BuscaMapaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACCF66B51C820F790044AF5F /* Build configuration list for PBXNativeTarget "BuscaMapaUITests" */;
+			buildPhases = (
+				ACCF66A21C820F790044AF5F /* Sources */,
+				ACCF66A31C820F790044AF5F /* Frameworks */,
+				ACCF66A41C820F790044AF5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACCF66A81C820F790044AF5F /* PBXTargetDependency */,
+			);
+			name = BuscaMapaUITests;
+			productName = BuscaMapaUITests;
+			productReference = ACCF66A61C820F790044AF5F /* BuscaMapaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACCF667F1C820F790044AF5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Thiago Nogueira";
+				TargetAttributes = {
+					ACCF66861C820F790044AF5F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					ACCF669A1C820F790044AF5F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = ACCF66861C820F790044AF5F;
+					};
+					ACCF66A51C820F790044AF5F = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = ACCF66861C820F790044AF5F;
+					};
+				};
+			};
+			buildConfigurationList = ACCF66821C820F790044AF5F /* Build configuration list for PBXProject "BuscaMapa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACCF667E1C820F790044AF5F;
+			productRefGroup = ACCF66881C820F790044AF5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACCF66861C820F790044AF5F /* BuscaMapa */,
+				ACCF669A1C820F790044AF5F /* BuscaMapaTests */,
+				ACCF66A51C820F790044AF5F /* BuscaMapaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACCF66851C820F790044AF5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF66951C820F790044AF5F /* LaunchScreen.storyboard in Resources */,
+				ACCF66921C820F790044AF5F /* Assets.xcassets in Resources */,
+				ACCF66901C820F790044AF5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF66991C820F790044AF5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF66A41C820F790044AF5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACCF66831C820F790044AF5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF668D1C820F790044AF5F /* ViewController.swift in Sources */,
+				ACCF668B1C820F790044AF5F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF66971C820F790044AF5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF66A01C820F790044AF5F /* BuscaMapaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACCF66A21C820F790044AF5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCF66AB1C820F790044AF5F /* BuscaMapaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACCF669D1C820F790044AF5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCF66861C820F790044AF5F /* BuscaMapa */;
+			targetProxy = ACCF669C1C820F790044AF5F /* PBXContainerItemProxy */;
+		};
+		ACCF66A81C820F790044AF5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACCF66861C820F790044AF5F /* BuscaMapa */;
+			targetProxy = ACCF66A71C820F790044AF5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACCF668E1C820F790044AF5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCF668F1C820F790044AF5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACCF66931C820F790044AF5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACCF66941C820F790044AF5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACCF66AD1C820F790044AF5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACCF66AE1C820F790044AF5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACCF66B01C820F790044AF5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuscaMapa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ACCF66B11C820F790044AF5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuscaMapa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ACCF66B31C820F790044AF5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuscaMapaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuscaMapa.app/BuscaMapa";
+			};
+			name = Debug;
+		};
+		ACCF66B41C820F790044AF5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuscaMapaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuscaMapa.app/BuscaMapa";
+			};
+			name = Release;
+		};
+		ACCF66B61C820F790044AF5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuscaMapaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuscaMapa;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		ACCF66B71C820F790044AF5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuscaMapaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuscaMapa;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACCF66821C820F790044AF5F /* Build configuration list for PBXProject "BuscaMapa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF66AD1C820F790044AF5F /* Debug */,
+				ACCF66AE1C820F790044AF5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACCF66AF1C820F790044AF5F /* Build configuration list for PBXNativeTarget "BuscaMapa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF66B01C820F790044AF5F /* Debug */,
+				ACCF66B11C820F790044AF5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACCF66B21C820F790044AF5F /* Build configuration list for PBXNativeTarget "BuscaMapaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF66B31C820F790044AF5F /* Debug */,
+				ACCF66B41C820F790044AF5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACCF66B51C820F790044AF5F /* Build configuration list for PBXNativeTarget "BuscaMapaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACCF66B61C820F790044AF5F /* Debug */,
+				ACCF66B71C820F790044AF5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACCF667F1C820F790044AF5F /* Project object */;
+}
