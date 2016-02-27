@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, MKMapViewDelegate {
+class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
 
@@ -85,6 +85,44 @@ class ViewController: UIViewController, MKMapViewDelegate {
             
         }
         return nil
+    }
+
+
+    func mapView(mapView: MKMapView, annotationView view:
+        MKAnnotationView, calloutAccessoryControlTapped control:
+        UIControl) {
+        
+        if (view.annotation is MetroAnnotation) {
+            let url:NSURL = NSURL(string: "http://www.metro.sp.gov.br")!
+            UIApplication.sharedApplication().openURL(url)
+            print(view.annotation?.title)
+            
+        } else if (view.annotation is FiapAnnotation) {
+            let url:NSURL = NSURL(string: "http://www.fiap.com.br")!
+            UIApplication.sharedApplication().openURL(url)
+            print(view.annotation?.title)
+            
+        }
+    }
+
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        let request = MKLocalSearchRequest()
+        request.naturalLanguageQuery = searchBar.text
+        request.region = self.mapView.region
+        var search = MKLocalSearch(request: request)
+        search.startWithCompletionHandler {(response, error) -> Void in
+            if (error == nil) {
+            var placemarks: [MKPointAnnotation] = []
+                for item: MKMapItem in response!.mapItems {
+                    let place = MKPointAnnotation()
+                    place.coordinate = item.placemark.coordinate
+                    place.title = item.name
+                    placemarks.append(place)
+                }
+                self.mapView.removeAnnotations(self.mapView.annotations)
+                self.mapView.addAnnotations(placemarks)
+            }
+        }
     }
 }
 
