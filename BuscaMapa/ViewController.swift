@@ -83,10 +83,21 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
                 return anView
             }
             
+        } else if annotation is AbreMapaAnnotation {
+            let reuseId = "reuseAbreMapaAnnotation"
+            var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
+            if anView == nil {
+                anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                anView!.image = UIImage(named: "userLogo")
+                anView!.canShowCallout = true
+                anView!.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
+                
+                return anView
+            }
+            
         }
         return nil
     }
-
 
     func mapView(mapView: MKMapView, annotationView view:
         MKAnnotationView, calloutAccessoryControlTapped control:
@@ -102,6 +113,9 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
             UIApplication.sharedApplication().openURL(url)
             print(view.annotation?.title)
             
+        } else if (view.annotation is AbreMapaAnnotation) {
+            
+            displayRegionCenteredOnMapItem((view.annotation as! AbreMapaAnnotation).mkMapItem!)
         }
     }
 
@@ -109,20 +123,29 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
         let request = MKLocalSearchRequest()
         request.naturalLanguageQuery = searchBar.text
         request.region = self.mapView.region
-        var search = MKLocalSearch(request: request)
+        let search = MKLocalSearch(request: request)
         search.startWithCompletionHandler {(response, error) -> Void in
             if (error == nil) {
-            var placemarks: [MKPointAnnotation] = []
+            var placemarks: [AbreMapaAnnotation] = []
                 for item: MKMapItem in response!.mapItems {
-                    let place = MKPointAnnotation()
-                    place.coordinate = item.placemark.coordinate
-                    place.title = item.name
+                    let place = AbreMapaAnnotation(coordinate: item.placemark.coordinate, title: item.name, subtitle: nil, mkMapItem: item)
                     placemarks.append(place)
                 }
                 self.mapView.removeAnnotations(self.mapView.annotations)
                 self.mapView.addAnnotations(placemarks)
             }
         }
+    }
+
+    func displayRegionCenteredOnMapItem (from:MKMapItem){
+        //Obtem a localizacao do item passado como parametro
+        let fromLocation: CLLocation = from.placemark.location!
+        let region = MKCoordinateRegionMakeWithDistance(fromLocation.coordinate, 10000, 10000)
+        let opts = [
+        MKLaunchOptionsMapSpanKey: NSValue(MKCoordinateSpan:region.span),
+        MKLaunchOptionsMapCenterKey: NSValue(MKCoordinate: region.center)
+        ]
+        from.openInMapsWithLaunchOptions(opts)
     }
 }
 

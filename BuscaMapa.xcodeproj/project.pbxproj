@@ -17,6 +17,7 @@
 		ACCF66B91C8210800044AF5F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF66B81C8210800044AF5F /* MapKit.framework */; };
 		ACCF66BB1C821C5A0044AF5F /* MetroAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66BA1C821C5A0044AF5F /* MetroAnnotation.swift */; };
 		ACCF66BD1C8229CC0044AF5F /* FiapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66BC1C8229CC0044AF5F /* FiapAnnotation.swift */; };
+		ACCF66BF1C82379C0044AF5F /* AbreMapaAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66BE1C82379C0044AF5F /* AbreMapaAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		ACCF66B81C8210800044AF5F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		ACCF66BA1C821C5A0044AF5F /* MetroAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroAnnotation.swift; sourceTree = "<group>"; };
 		ACCF66BC1C8229CC0044AF5F /* FiapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiapAnnotation.swift; sourceTree = "<group>"; };
+		ACCF66BE1C82379C0044AF5F /* AbreMapaAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbreMapaAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				ACCF668E1C820F790044AF5F /* Main.storyboard */,
 				ACCF66BC1C8229CC0044AF5F /* FiapAnnotation.swift */,
 				ACCF66BA1C821C5A0044AF5F /* MetroAnnotation.swift */,
+				ACCF66BE1C82379C0044AF5F /* AbreMapaAnnotation.swift */,
 				ACCF66911C820F790044AF5F /* Assets.xcassets */,
 				ACCF66931C820F790044AF5F /* LaunchScreen.storyboard */,
 				ACCF66961C820F790044AF5F /* Info.plist */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCF66BF1C82379C0044AF5F /* AbreMapaAnnotation.swift in Sources */,
 				ACCF66BB1C821C5A0044AF5F /* MetroAnnotation.swift in Sources */,
 				ACCF668D1C820F790044AF5F /* ViewController.swift in Sources */,
 				ACCF66BD1C8229CC0044AF5F /* FiapAnnotation.swift in Sources */,
