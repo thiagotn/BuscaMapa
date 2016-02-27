@@ -14,6 +14,9 @@
 		ACCF66951C820F790044AF5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCF66931C820F790044AF5F /* LaunchScreen.storyboard */; };
 		ACCF66A01C820F790044AF5F /* BuscaMapaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF669F1C820F790044AF5F /* BuscaMapaTests.swift */; };
 		ACCF66AB1C820F790044AF5F /* BuscaMapaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66AA1C820F790044AF5F /* BuscaMapaUITests.swift */; };
+		ACCF66B91C8210800044AF5F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCF66B81C8210800044AF5F /* MapKit.framework */; };
+		ACCF66BB1C821C5A0044AF5F /* MetroAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66BA1C821C5A0044AF5F /* MetroAnnotation.swift */; };
+		ACCF66BD1C8229CC0044AF5F /* FiapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCF66BC1C8229CC0044AF5F /* FiapAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		ACCF66A61C820F790044AF5F /* BuscaMapaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaMapaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCF66AA1C820F790044AF5F /* BuscaMapaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaMapaUITests.swift; sourceTree = "<group>"; };
 		ACCF66AC1C820F790044AF5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACCF66B81C8210800044AF5F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ACCF66BA1C821C5A0044AF5F /* MetroAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetroAnnotation.swift; sourceTree = "<group>"; };
+		ACCF66BC1C8229CC0044AF5F /* FiapAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiapAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCF66B91C8210800044AF5F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,7 @@
 		ACCF667E1C820F790044AF5F = {
 			isa = PBXGroup;
 			children = (
+				ACCF66B81C8210800044AF5F /* MapKit.framework */,
 				ACCF66891C820F790044AF5F /* BuscaMapa */,
 				ACCF669E1C820F790044AF5F /* BuscaMapaTests */,
 				ACCF66A91C820F790044AF5F /* BuscaMapaUITests */,
@@ -100,6 +108,8 @@
 				ACCF668A1C820F790044AF5F /* AppDelegate.swift */,
 				ACCF668C1C820F790044AF5F /* ViewController.swift */,
 				ACCF668E1C820F790044AF5F /* Main.storyboard */,
+				ACCF66BC1C8229CC0044AF5F /* FiapAnnotation.swift */,
+				ACCF66BA1C821C5A0044AF5F /* MetroAnnotation.swift */,
 				ACCF66911C820F790044AF5F /* Assets.xcassets */,
 				ACCF66931C820F790044AF5F /* LaunchScreen.storyboard */,
 				ACCF66961C820F790044AF5F /* Info.plist */,
@@ -193,6 +203,12 @@
 				TargetAttributes = {
 					ACCF66861C820F790044AF5F = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 4T6Q523S37;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					ACCF669A1C820F790044AF5F = {
 						CreatedOnToolsVersion = 7.2;
@@ -256,7 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCF66BB1C821C5A0044AF5F /* MetroAnnotation.swift in Sources */,
 				ACCF668D1C820F790044AF5F /* ViewController.swift in Sources */,
+				ACCF66BD1C8229CC0044AF5F /* FiapAnnotation.swift in Sources */,
 				ACCF668B1C820F790044AF5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,10 +417,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BuscaMapa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +431,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BuscaMapa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.thiago.BuscaMapa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
