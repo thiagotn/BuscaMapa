@@ -88,7 +88,7 @@ class ViewController: UIViewController, MKMapViewDelegate, UISearchBarDelegate {
             var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(reuseId)
             if anView == nil {
                 anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-                anView!.image = UIImage(named: "userLogo")
+                anView!.image = UIImage(named: "interesseLogo")
                 anView!.canShowCallout = true
                 anView!.rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
                 
